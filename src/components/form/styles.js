@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const FormContainer = styled.form`
   background-color: #ffffff;
   width: 50%;
-  height: 40vh;
+  height: 50vh;
   border-radius: 10px;
 
   padding: 20px;
@@ -12,6 +12,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  min-width: 500px;
+  max-width: 900px;
+
+  min-height: 400px;
+  max-height: 690px;
 `;
 
 export const Title = styled.h1`

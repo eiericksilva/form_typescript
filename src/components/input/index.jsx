@@ -5,7 +5,6 @@ const Input = () => {
   return (
     <InputContainer>
       <input type="text" placeholder="E-mail" />
-      <input type="password" placeholder="Password" />
     </InputContainer>
   );
 };

@@ -11,4 +11,12 @@ export const InputContainer = styled.div`
     border-bottom: 1px solid #191d3a;
     outline: none;
   }
+
+  span {
+    color: #ff0000;
+    font-size: 12px;
+    position: relative;
+    top: -21px;
+    left: 7px;
+  }
 `;
