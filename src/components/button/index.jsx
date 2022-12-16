@@ -1,8 +1,8 @@
 import React from "react";
-import { ButtonSubmit } from "./styles";
+import { ButtonContainer } from "./styles";
 
-const Button = ({ isValid, disabled }) => {
-  return <ButtonSubmit>Entrar</ButtonSubmit>;
+const Button = () => {
+  return <ButtonContainer>Entrar</ButtonContainer>;
 };
 
 export default Button;

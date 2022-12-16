@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonSubmit = styled.button`
+export const ButtonContainer = styled.button`
   padding: 10px;
   background-color: #b71c55;
   color: #ffffff;
