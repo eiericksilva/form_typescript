@@ -24,7 +24,7 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid },
   } = useForm({
     resolver: yupResolver(schema),
     mode: "onChange",
@@ -48,7 +48,7 @@ const Form = () => {
           />
           {errors.password ? <span>{errors.password?.message}</span> : null}
         </InputContainer>
-        <Button type="submit" />
+        <Button type="submit" isValid={isValid} />
       </FormContainer>
     </div>
   );
