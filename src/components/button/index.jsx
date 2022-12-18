@@ -3,7 +3,7 @@ import { ButtonContainer } from "./styles";
 
 const Button = ({ disabled, isValid }) => {
   return (
-    <ButtonContainer disabled isValid={isValid}>
+    <ButtonContainer disabled={isValid ? false : true} isValid={isValid}>
       Entrar
     </ButtonContainer>
   );
