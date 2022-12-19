@@ -6,6 +6,7 @@ import { InputContainer } from "../input/styles";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { IData } from "./types";
 
 const schema = yup
   .object({
@@ -25,13 +26,13 @@ const Form = () => {
     register,
     handleSubmit,
     formState: { errors, isValid },
-  } = useForm({
+  } = useForm<IData>({
     resolver: yupResolver(schema),
     mode: "onChange",
     reValidateMode: "onChange",
   });
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data: IData) => {
+    await console.log(data);
   };
 
   return (
